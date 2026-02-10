@@ -1,0 +1,30 @@
+{
+    "name": "high-scale-energy-ingestion-engine",
+    "version": "1.0.0",
+    "description": "High-scale telemetry ingestion engine for smart meters and EV fleets",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "nodemon src/server.js",
+        "seed": "node src/seed.js"
+    },
+    "keywords": [
+        "nodejs",
+        "express",
+        "postgresql",
+        "telemetry",
+        "energy",
+        "ingestion",
+        "analytics"
+    ],
+    "author": "Aditya Singh",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "pg": "^8.18.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.3"
+    }
+}
