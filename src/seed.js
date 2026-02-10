@@ -2,7 +2,7 @@ require("dotenv").config();
 const db = require("./db");
 
 async function seed() {
-  console.log("🌱 Seeding database...");
+  console.log("Seeding database...");
 
   await db.query(`
     INSERT INTO vehicle_live_status
@@ -18,11 +18,11 @@ async function seed() {
     ON CONFLICT (meter_id) DO NOTHING
   `);
 
-  console.log("✅ Seed completed (no duplicates)");
+  console.log("Seed completed (no duplicates)");
   process.exit(0);
 }
 
 seed().catch((err) => {
-  console.error("❌ Seed failed", err);
+  console.error(" Seed failed", err);
   process.exit(1);
 });
